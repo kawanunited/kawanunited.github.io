@@ -1,0 +1,145 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src='./move.min.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+	</script>
+	<script src="sinch.min.js"></script>
+
+
+	<title>Kawan Paratha | The One and Only Paratha For You!</title>
+	  <style>
+     .box{display:block;width:250px;height:250px;background-color:#754C78;}
+
+     .jumbotron{
+     	margin: 0px;
+     }
+
+     .family{
+     	background-image: url("http://peraalto.se/wp-content/uploads/2013/03/PanoramaRaps.jpg");
+     filter: blur(5px);
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+
+    #map-canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+</head>
+
+<body>
+
+	<div class='jumbotron' style='background-color: #C2FF85'>
+
+		<img class="fadeIn fadeIn-1s fadeIn-Delay-1s" src="kawan.png" alt="" height='800px' style='float: right; padding-right: 30em; padding-bottom:30em; padding-top:-20em'/>
+
+		<div style='text-align: left; font-size: 100px; font-family: "Julius Sans One", sans-serif;
+		padding-left: 0.5em; padding-top: 0.5em;'>
+			Kawan Paratha
+		</div>
+
+		<br>
+
+		<h3 style='font-family: "Julius Sans One", sans-serif; padding-left: 6em; padding-bottom: 0.5em;'>
+			Maa ka khana, aapke fridge mein.
+		</h3>
+		
+	</div>
+
+
+	<!--<div class='openstatement' style='background-color: #FFDEAD'>
+
+	<script src="move.min.js"></script>
+     <script>
+      addEventListener('DOMContentLoaded', function(){
+        setInterval(function(){
+            move('.box').x(14500).duration('1s').end();
+            setTimeout(function(){move('.box').x(0).duration('1s').end();},1000)
+        },2500)
+      }, false);
+    </script>
+</div> -->
+
+<div class='jumbotron family' style='min-height: 700px;'>
+	<h1 style='font-size: 70px;text-align:center;font-family: "Julius Sans One", sans-serif;'>Bringing families together, one paratha at a time.</h1>
+</div>
+
+<div class='col-sm-4'>
+<h1><b>Our Promise</b></h1>
+<br>
+<div style='font-size: 1.5em; padding-bottom: 2em;'>
+Kawan Paratha is made with the finest quality ingredients, ensuring you taste nothing but the finest grains. We import all of our ingredients from the North Pole, a rich and prosperous agricultural area. Whether you fry up an egg, or melt some cheese and make a pizza, we are committed to serve our loyal customers. You can find Kawan Paratha in an indian supermarket near you! Find the nearest Kawan near you in the map below!
+</div>
+ <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(37.703437, -121.91065),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <div id="map-canvas"></div>
+
+</div>
+
+<div class='col-sm-4'>
+<h1><b>What We Offer</b></h1>
+<br>
+<div style='font-size: 1.5em; padding-bottom: 2em;'>
+	Kawan makes a variety of products, including: 
+	<ul>
+<li>Paratha</li>
+<li>Stuffed Paratha</li>
+<li>Wellness Paratha</li>
+<li>Chapatti</li>
+<li>Naan</li>
+<li>Roti Wraps</li>
+<li>Curry</li>
+<li>Puff Pastry</li>
+<li>Samosa</li>
+<li>Roti Chanai</li>
+<li>Roti Multigrain</li>
+
+	</ul>	
+</div>
+</div>
+
+<div class='col-sm-4'>
+	<h1><b>Enjoy!</b></h1>
+
+	<br>
+
+	<div style='font-size: 1.5em; padding-bottom: 2em;'>
+		There are three easy steps to eat your delicious Kawan!
+		<ul>
+			<li>Turn on the stove</li>
+			<li>Heat up your tava</li>
+			<li>Put some ghee on the tava</li>
+			<li>Get your kawan out of the fridge</li>
+			<li>Take the plastic off (unless you would like our suicide kawan)</li>
+			<li>put on the tava</li>
+			<li>wait</li>
+			<li>flip it over</li>
+			<li>wait</li>
+			<li>take it off</li>
+			<li>stuff it in ur mout</li>
+			<li>Enjoy!</li>
+		</ul>
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>
